@@ -19,7 +19,6 @@ def get_driver():
 def main():
   driver = get_driver()
   # xpath was taken in Chrome by right-clicking
-  # over <span aria-hidden="true">$15.12</span>
   # and then Copy -> xpath
   element = driver.find_element(by="xpath", value='//*[@id="corePrice_desktop"]/div/table/tbody/tr/td[2]/span[1]/span[2]')
   # print('element', element.text)
